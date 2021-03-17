@@ -1,0 +1,75 @@
+.nav {
+  padding: 2em 5em;
+  display: -ms-grid;
+  display: grid;
+  background: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 10000;
+  top: 0;
+  grid-template-areas: "b n";
+}
+
+@media (max-width: 700px) {
+  .nav {
+    grid-template-areas:
+      "b"
+      "n";
+    padding: 2em;
+  }
+}
+
+.nav .brand {
+  grid-area: "b";
+}
+
+.nav .brand .main_line {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.nav .navlinks {
+  grid-area: "n";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.nav .navlinks .link {
+  margin-right: 1em;
+  font-weight: 300;
+}
+
+.nav .navlinks .link a {
+  text-decoration: none;
+  color: #797070;
+  -webkit-transition: color 400ms;
+  transition: color 400ms;
+  position: relative;
+}
+
+.nav .navlinks .link a:after {
+  content: "";
+  background: transparent;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-transition: background 400ms;
+  transition: background 400ms;
+}
+
+.nav .navlinks .link a:hover,
+.nav .navlinks .link a.active {
+  color: #0f0e0e;
+}
+
+.nav .navlinks .link a:hover:after,
+.nav .navlinks .link a.active:after {
+  background: #797070;
+}

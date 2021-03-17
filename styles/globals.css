@@ -2,6 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background-color: #eee;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -13,4 +14,13 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.highlight {
+  background: #f0ff00;
+  padding: 0 5px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  display: inline-block;
+  cursor: none;
 }
