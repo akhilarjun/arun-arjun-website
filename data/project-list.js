@@ -1,6 +1,6 @@
 const ProjectList = [
   {
-    imgSrc: "img/arunarjun.jpeg",
+    imgSrc: "projects/brain-tumour.jpg",
     caption:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis perspiciatis officia eos sit adipisci modi.",
     tags: "qonsept",
@@ -12,7 +12,7 @@ const ProjectList = [
     tags: "equity",
   },
   {
-    imgSrc: "projects/gay-pride-arun.jpg",
+    imgSrc: "projects/gay-pride.jpg",
     caption:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis perspiciatis officia eos sit adipisci modi.",
     tags: "qonsept",
@@ -42,7 +42,25 @@ const ProjectList = [
     tags: "equity",
   },
   {
-    imgSrc: "projects/YogaDay2.jpg",
+    imgSrc: "projects/yoga_day.jpg",
+    caption:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis perspiciatis officia eos sit adipisci modi.",
+    tags: "qonsept",
+  },
+  {
+    imgSrc: "projects/chai.jpeg",
+    caption:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis perspiciatis officia eos sit adipisci modi.",
+    tags: "qonsept",
+  },
+  {
+    imgSrc: "projects/red_dot.jpg",
+    caption:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis perspiciatis officia eos sit adipisci modi.",
+    tags: "qonsept",
+  },
+  {
+    imgSrc: "projects/you_choose.jpg",
     caption:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis perspiciatis officia eos sit adipisci modi.",
     tags: "qonsept",
