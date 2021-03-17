@@ -54,7 +54,7 @@ const ProjectList = [
     tags: "qonsept",
   },
   {
-    imgSrc: "projects/red_dot.jpg",
+    imgSrc: "projects/red_dot.jpeg",
     caption:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis perspiciatis officia eos sit adipisci modi.",
     tags: "qonsept",
