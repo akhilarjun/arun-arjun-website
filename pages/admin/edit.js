@@ -109,15 +109,15 @@ const Edit = ({workExp, education, projects}) => {
   }
 
   const saveUpdated = () => {
-    fetch ('http://localhost:3000/api/getWorkExp', {
+    fetch ('https://arunarjun.com/api/getWorkExp', {
       method: 'POST',
       body: JSON.stringify(workExperience)
-    });
-    fetch ('http://localhost:3000/api/getEducation', {
+    });``
+    fetch ('https://arunarjun.com/api/getEducation', {
       method: 'POST',
       body: JSON.stringify(educationArr)
     });
-    fetch ('http://localhost:3000/api/getProjects', {
+    fetch ('https://arunarjun.com/api/getProjects', {
       method: 'POST',
       body: JSON.stringify(projectsArr)
     });
@@ -240,11 +240,11 @@ const Edit = ({workExp, education, projects}) => {
 export default Edit;
 
 export async function getServerSideProps() {
-  const workExperienceData = await fetch('http://localhost:3000/api/getWorkExp');
+  const workExperienceData = await fetch('https://arunarjun.com/api/getWorkExp');
   const workExp = await workExperienceData.json();
-  const educationData = await fetch('http://localhost:3000/api/getEducation');
+  const educationData = await fetch('https://arunarjun.com/api/getEducation');
   const education = await educationData.json();
-  const projectsData = await fetch('http://localhost:3000/api/getProjects');
+  const projectsData = await fetch('https://arunarjun.com/api/getProjects');
   const projects = await projectsData.json();
   return {
     props: {
