@@ -1,0 +1,84 @@
+.edit_page {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.edit_page section {
+    margin: 10px 0;
+}
+
+.edit_page h1 {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card {
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 10px;
+}
+
+.card_header {
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.card_header button{
+    float: right;
+    font-size: 15px;
+    border: none;
+    background-color: #c44;
+    color: #fff;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+.card_content {
+    margin: 10px 0;
+    padding: 15px 20px;
+}
+
+.card_content input, .card_content textarea {
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.section_footer {
+    text-align: right;
+    margin: 5px 0;
+}
+
+.section_footer button, .title button {
+    padding: 10px 16px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #000;
+}
+
+.title button {
+    float: right;
+    font-size: 15px;
+}
+
+.title:after,.title:before, .card_header:after, .card_header:before{
+    content: "";
+    display: table;
+    clear: both;
+}

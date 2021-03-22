@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
           content="https://www.arunarjun.com/assets/img/arunarjun.jpeg"
         />
 
-        <script src="./js/vanilla_tilt.min.js"></script>
+        <script src="/js/vanilla_tilt.min.js"></script>
       </Head>
       <Navbar />
       <div className={layoutStyle.container}>
