@@ -124,7 +124,7 @@ const Edit = ({workExp, education, projects}) => {
   }
 
   return (
-    <div className={EditStyles.edit_page}>
+    <div className={EditStyles.edit_page} style={{display: loggedIn? "block": "none"}}>
       <h1>Update your Website!</h1>
       <section>
         <div className={EditStyles.title}>
