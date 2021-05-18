@@ -32,7 +32,7 @@ export const AuthProvider = (props) => {
             clearTimer = null;
             setToken(null);
         }
-        const response = await fetch(`https://arunarjun.com/api/auth-token`);
+        const response = await fetch(`https://www.arunarjun.com/api/auth-token`);
         const {token} = await response.json();
         setToken(token)
         toast.success('Token generated succesfully, and sent to arxxxxxxxx35@gmail.com', {
