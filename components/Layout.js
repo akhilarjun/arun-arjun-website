@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
         />
         <meta
           property="og:image"
-          content="https://www.arunarjun.com/assets/img/arunarjun.jpeg"
+          content="https://www.arunarjun.com/img/arunarjun.jpeg"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
         />
         <meta
           property="twitter:image"
-          content="https://www.arunarjun.com/assets/img/arunarjun.jpeg"
+          content="https://www.arunarjun.com/img/arunarjun.jpeg"
         />
 
         <script src="/js/vanilla_tilt.min.js"></script>
