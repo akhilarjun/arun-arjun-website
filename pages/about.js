@@ -1,9 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
-import AboutMe from "../data/about-me";
 import aboutStyles from "../styles/About.module.css";
 
-const About = () => {
+const About = ({ education, workExperience }) => {
   return (
     <div>
       <Head>
@@ -37,6 +36,7 @@ const About = () => {
                     <a
                       href="https://www.linkedin.com/in/arun-arjun-180622197/"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <img
                         src="./img/linkedin-3-128.png"
@@ -51,6 +51,7 @@ const About = () => {
                     <a
                       href="https://www.instagram.com/arunarjun_/"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <img
                         src="./img/instagram-128.png"
@@ -65,6 +66,7 @@ const About = () => {
                     <a
                       href="https://www.facebook.com/parappuratharun"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <img
                         src="./img/facebook-128.png"
@@ -80,13 +82,13 @@ const About = () => {
         </section>
         <section className={aboutStyles.section}>
           <div className={aboutStyles.title}>Work Experience</div>
-          {AboutMe.workExperience.map((exp) => (
+          {workExperience.data.map((exp) => (
             <div
               className={aboutStyles.work_experience_card}
               key={exp.duration}
             >
               <div className={aboutStyles.duration}>{exp.duration}</div>
-              <div className={aboutStyles.workplace}>{exp.workplace}</div>
+              <div className={aboutStyles.workplace}>{exp.workPlace}</div>
               <div className={aboutStyles.designation}>{exp.designation}</div>
               <div className={aboutStyles.work_summary}>{exp.workSummary}</div>
             </div>
@@ -94,7 +96,7 @@ const About = () => {
         </section>
         <section className={aboutStyles.section}>
           <div className={aboutStyles.title}>Education and Training</div>
-          {AboutMe.education.map((exp) => (
+          {education.data.map((exp) => (
             <div
               className={aboutStyles.education_card}
               key={exp.courseDuration}
@@ -116,5 +118,20 @@ const About = () => {
     </div>
   );
 };
+
+export async function getStaticProps() {
+  const res = await fetch("https://www.arunarjun.com/api/getEducation");
+  const education = await res.json();
+
+  const workRes = await fetch("https://www.arunarjun.com/api/getWorkExp");
+  const workExperience = await workRes.json();
+
+  return {
+    props: {
+      education,
+      workExperience
+    }
+  };
+}
 
 export default About;

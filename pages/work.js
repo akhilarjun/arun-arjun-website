@@ -5,7 +5,7 @@ import ProjectList from "../data/project-list";
 
 import workStyles from "../styles/Work.module.css";
 
-const Work = () => {
+const Work = ({ projectsList }) => {
   // let projects = [...ProjectList];
   const [projects, setProjects] = useState([...ProjectList]);
 
@@ -89,5 +89,16 @@ const Work = () => {
     </div>
   );
 };
+
+export async function getStaticProps() {
+  const res = await fetch("https://www.arunarjun.com/api/getProjects");
+  const projectsList = await res.json();
+
+  return {
+    props: {
+      projectsList
+    }
+  };
+}
 
 export default Work;
